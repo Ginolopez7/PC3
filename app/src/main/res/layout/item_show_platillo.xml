@@ -9,7 +9,7 @@
         android:id="@+id/img_show"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@drawable/black_panther"
+        android:src="@drawable/clasica"
         android:contentDescription="@null"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"

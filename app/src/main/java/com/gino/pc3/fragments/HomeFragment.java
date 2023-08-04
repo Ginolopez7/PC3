@@ -10,12 +10,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.LinearLayout;
 
 import com.gino.pc3.R;
+
 import com.gino.pc3.databinding.FragmentHomeBinding;
-import com.gino.pc3.model.Receta;
-import com.gino.pc3.model.Platillo;
 import com.gino.pc3.model.Shows;
 
 import java.util.ArrayList;
@@ -48,7 +48,7 @@ public class HomeFragment extends Fragment {
 
     private List<Shows> getData() {
         List<Shows> shows = new ArrayList<>();
-        shows.add(new Platillo("Hamburguesa","https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/a/base-bembos-clasica_1.jpg",8,"Clasica"));
+        shows.add(new Shows("Hamburguesa","https://d31npzejelj8v1.cloudfront.net/media/catalog/product/b/a/base-bembos-clasica_1.jpg"));
         return shows;
     }
 

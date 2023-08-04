@@ -9,8 +9,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import com.gino.pc3.databinding.ItemShowPlatilloBinding;
-import com.gino.pc3.model.Platillo;
-import com.gino.pc3.model.Receta;
 import com.gino.pc3.model.Shows;
 
 import coil.Coil;
@@ -52,12 +50,6 @@ public class RVPlatillosAdapter extends RecyclerView.Adapter<RVPlatillosAdapter.
         }
 
         public void bind(Shows show) {
-            if (show instanceof Platillo) {
-                binding.txtPrecio.setVisibility(View.GONE);
-            } else if (show instanceof Receta) {
-                binding.txtPrecio.setVisibility(View.VISIBLE);
-                binding.txtPrecio.setText("Precio " + ((Receta) show).getPrecio());
-            }
             binding.txtName.setText(show.getName());
             ImageLoader imageLoader = Coil.imageLoader(binding.getRoot().getContext());
             ImageRequest request = new ImageRequest.Builder(binding.getRoot().getContext())
